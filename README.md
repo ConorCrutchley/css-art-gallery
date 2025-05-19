@@ -1,6 +1,6 @@
 # CSS Art Gallery
 
-This project coincides with the "Creative CSS Drawing Course: Make Art with CSS" course by Ahmed Sadek on Udemy.
+This project coincides with the ["Creative CSS Drawing Course: Make Art with CSS"](https://www.udemy.com/course/creative-css-drawing-course-make-art-with-css/) course by Ahmed Sadek on Udemy.
 
 Each folder contains a CSS drawing that has been covered by the CSS drawing course. They are numbered by which drawing was covered first (for example the first drawing in the course was the diamond, so the folder is labelled 1 - diamond).
 
