@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  --red: #ff3838;
+  --light-grey: #eee;
+  --mid-grey: #ddd;
+  --dark-grey: #ccc;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 0;
+  height: 0;
+  border-top: 100px solid var(--light-grey);
+  border-right: 170px solid var(--mid-grey);
+  border-bottom: 100px solid var(--dark-grey);
+  border-left: 170px solid var(--dark-grey);
+}
+.heart {
+  width: 32px;
+  height: 32px;
+  background-color: var(--red);
+  transform: translate(-50%, -50%) rotate(45deg);
+  animation: heartbeat 1.4s linear infinite;
+}
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.heart::before {
+  background-color: var(--red);
+  transform: translateY(-50%);
+}
+.heart::after {
+  background-color: var(--red);
+  transform: translateX(-50%);
+}
+@keyframes heartbeat {
+  0% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+  30% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1.4);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
+  }
+  70% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1.4);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+}
