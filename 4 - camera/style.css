@@ -1,0 +1,64 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --white: #f5f5f5;
+  --grey: #c0c0c0;
+}
+.camera,
+.lens,
+.inner-lens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lens,
+.inner-lens,
+.inner-lens-2,
+.flash {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+.camera {
+  width: 205px;
+  height: 155px;
+  background-color: #d6d6d6;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px -13px black;
+  position: relative;
+}
+.lens {
+  width: 125px;
+  background-color: var(--white);
+  box-shadow: 0 8px 0 0 var(--grey);
+}
+.inner-lens {
+  width: 105px;
+  background-color: #00695c;
+}
+.inner-lens-2 {
+  border-top: 31px solid #00897b;
+  border-right: 31px solid #4db6ac;
+  border-bottom: 31px solid #80cbc4;
+  border-left: 31px solid #26a69a;
+}
+.flash,
+.button {
+  position: absolute;
+}
+.flash {
+  width: 20px;
+  background-color: var(--white);
+  box-shadow: 0 4px 0 0 var(--grey);
+  right: 15px;
+  top: 15px;
+}
+.button {
+  width: 30px;
+  height: 5px;
+  background-color: #009587;
+  border-radius: 60px;
+  left: 16px;
+  top: -5px;
+}
