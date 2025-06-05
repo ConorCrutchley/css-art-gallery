@@ -1,0 +1,98 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(60deg, #303030, #000000);
+  --yellow: #fdff00;
+}
+.oval {
+  width: 230px;
+  height: 130px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.logo,
+.o,
+.sq,
+.ears {
+  position: absolute;
+}
+.logo,
+.o {
+  border-radius: 50%;
+}
+.logo {
+  width: 212px;
+  height: 112px;
+  background-color: #000;
+}
+.o,
+.sq {
+  background-color: var(--yellow);
+}
+.o1,
+.o2 {
+  width: 33px;
+  height: 70px;
+  top: 67px;
+}
+.o1 {
+  left: 44px;
+  transform: rotate(-41deg);
+}
+.o2 {
+  right: 44px;
+  transform: rotate(41deg);
+}
+.o3,
+.o4 {
+  width: 38px;
+  height: 70px;
+  top: 73px;
+}
+.o3 {
+  left: 68px;
+  transform: rotate(-15deg);
+}
+.o4 {
+  right: 68px;
+  transform: rotate(15deg);
+}
+.o5,
+.o6 {
+  width: 37px;
+  height: 40px;
+}
+.o5 {
+  top: 0;
+  left: 57px;
+}
+.o6 {
+  top: 0;
+  right: 57px;
+}
+.sq {
+  height: 20px;
+  width: 20px;
+  top: 0;
+}
+.sq1 {
+  left: 74px;
+}
+.sq2 {
+  right: 74px;
+}
+.ears {
+  top: 0;
+  left: 95px;
+  border-top: 12px solid var(--yellow);
+  border-left: 6px solid #000;
+  border-right: 6px solid #000;
+  width: 11px;
+}
