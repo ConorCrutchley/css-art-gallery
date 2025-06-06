@@ -1,0 +1,59 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #002b82;
+  --red: #ff4040;
+}
+.c {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c3,
+.c1 {
+  background-color: var(--red);
+}
+.c3 {
+  width: 260px;
+}
+.c2 {
+  width: 210px;
+  background-color: white;
+}
+.c1 {
+  width: 150px;
+}
+.center {
+  width: 100px;
+  background-color: #306fd4;
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  border-top: 35px solid white;
+  border-left: 48px solid transparent;
+  border-right: 48px solid transparent;
+  border-bottom: 48px solid transparent;
+  width: 0;
+  height: 0;
+}
+.top {
+  top: 35px;
+  left: 2px;
+}
+.left,
+.right {
+  top: 16px;
+}
+.left {
+  left: -24px;
+  transform: rotate(72deg);
+}
+.right {
+  left: 24px;
+  transform: rotate(-72deg);
+}
