@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --green: #5dc59d;
+  padding: 0;
+  margin: 0;
+}
+
+.gear,
+.gear-inner {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.bar,
+.gear-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.gear {
+  width: 110px;
+  background-color: var(--green);
+}
+
+.gear-inner {
+  width: 55px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
+
+.bar {
+  width: 170px;
+  height: 40px;
+  background-color: var(--green);
+  border-radius: 7px;
+  transform: translate(-50%, -50%);
+}
+
+.bar:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.bar:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
