@@ -1,0 +1,59 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+.git,
+.line1::before,
+.line1::after,
+.line2::before {
+  aspect-ratio: 1 / 1;
+}
+.git {
+  width: 150px;
+  background-color: #f05033;
+  border-radius: 15px;
+  position: relative;
+}
+.git,
+.line2 {
+  transform: rotate(45deg);
+}
+.line,
+.line::before,
+.line1::after {
+  position: absolute;
+  background-color: white;
+}
+.line::before,
+.line1::after {
+  content: "";
+  border-radius: 50%;
+  width: 30px;
+  top: -8px;
+}
+.line {
+  height: 12px;
+}
+.line1 {
+  width: 110px;
+  top: 40px;
+}
+.line1::before {
+  left: 30px;
+}
+.line1::after {
+  left: 90px;
+}
+.line2 {
+  width: 90px;
+  top: 70px;
+  left: 30px;
+}
+.line2::before {
+  left: 70px;
+}
