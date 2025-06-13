@@ -1,0 +1,84 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panda,
+.eye-ball,
+.nose,
+.ear {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+.panda {
+  width: 300px;
+  background-color: white;
+  border: 12px solid black;
+  position: relative;
+}
+.eye,
+.eye-ball,
+.nose,
+.mouth,
+.ear {
+  position: absolute;
+}
+.eye,
+.eye-ball,
+.nose,
+.mouth,
+.ear {
+  background-color: black;
+}
+.eye {
+  width: 115px;
+  height: 58px;
+  top: 45%;
+  border-radius: 0 0 115px 115px;
+  overflow: hidden;
+}
+.eye-left {
+  left: 10px;
+  transform: rotate(30deg);
+}
+.eye-right {
+  right: 10px;
+  transform: rotate(-30deg);
+}
+.eye-ball {
+  width: 30px;
+  border: 12px solid white;
+  top: -50%;
+}
+.eye-left > .eye-ball {
+  left: 32%;
+}
+.eye-right > .eye-ball {
+  right: 32%;
+}
+.nose {
+  width: 16px;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mouth {
+  width: 50px;
+  height: 10px;
+  border-radius: 10px;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ear {
+  width: 130px;
+  top: -30px;
+  z-index: -1;
+}
+.ear-left {
+  left: -35px;
+}
+.ear-right {
+  right: -35px;
+}
