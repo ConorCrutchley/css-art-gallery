@@ -1,0 +1,35 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+}
+.brackets {
+  width: 200px;
+  height: 175px;
+  background-color: white;
+  border-radius: 31px;
+  box-shadow: 0 0 0 28px #28a9e1, 0 28px 0 28px #115a91;
+  position: relative;
+}
+.brackets::before,
+.brackets::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+}
+.brackets::before {
+  width: 50%;
+  height: 44%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 28px solid #4d4d4d;
+}
+.brackets::after {
+  width: 10%;
+  height: 100%;
+  background-color: white;
+  transform: translateX(-50%);
+}
