@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --background: #222729;
+  --brown: #6d4b27;
+  --light-brown: #9e784d;
+  --yellow: #f0ae1b;
+}
+body {
+  background: var(--background);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  z-index: -10;
+}
+.container div {
+  position: absolute;
+}
+.head {
+  width: 230px;
+  height: 130px;
+  background-color: var(--brown);
+}
+.head::before {
+  content: "";
+  width: 250px;
+  height: 230px;
+  background-color: var(--background);
+  position: absolute;
+  border-radius: 50%;
+  bottom: 50px;
+  left: -10px;
+}
+.eye-container,
+.eye-container::before,
+.eye {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.eye-container {
+  width: 120px;
+  background: var(--brown);
+  top: 80px;
+}
+.eye-container.left {
+  left: 185px;
+}
+.eye-container.right {
+  right: 185px;
+}
+.eye-container::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  background-color: #fff;
+  bottom: 7px;
+}
+.eye-container.left::before {
+  right: -5px;
+}
+.eye-container.right::before {
+  left: -5px;
+}
+.eye {
+  width: 75px;
+  background-color: #000;
+  border: 10px solid var(--yellow);
+  top: 20px;
+}
+.eye::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.left-eye {
+  left: 30px;
+}
+.right-eye {
+  right: 30px;
+}
+.forehead {
+  width: 200px;
+  height: 50px;
+  background-color: var(--brown);
+  left: 200px;
+  top: 75px;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+.beak {
+  width: 45px;
+  height: 60px;
+  background-color: var(--yellow);
+  top: 160px;
+  clip-path: polygon(0 0, 100% 0, 60% 100%, 40% 100%);
+  border-radius: 50%;
+}
+.wings {
+  width: 250px;
+  height: 300px;
+  background-color: var(--brown);
+  top: 150px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.wings::before,
+.wings::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.wings::before {
+  width: 200px;
+  height: 310px;
+  background-color: var(--light-brown);
+}
+.wings::after {
+  width: 150px;
+  height: 230px;
+  background-color: #fff;
+}
+.foot {
+  width: 15px;
+  height: 40px;
+  top: 420px;
+}
+.foot,
+.foot::before,
+.foot::after {
+  background-color: var(--yellow);
+  border-radius: 1px solid var(--light-brown);
+  border-radius: 50%;
+}
+.left-foot {
+  left: 220px;
+}
+.right-foot {
+  right: 220px;
+}
+.foot::before,
+.foot::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.left-foot::before {
+  left: 15px;
+}
+.left-foot::after {
+  left: 30px;
+}
+.right-foot::before {
+  right: 15px;
+}
+.right-foot::after {
+  right: 30px;
+}
+.branch {
+  width: 400px;
+  height: 15px;
+  background: #fff;
+  bottom: 25px;
+  border-radius: 10px;
+}
