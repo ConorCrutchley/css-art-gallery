@@ -1,0 +1,143 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #9ed2ec;
+  --dark-grey: #2b303a;
+  --brown: #83282a;
+  --red: #e63c33;
+}
+div {
+  position: relative;
+}
+.snowman {
+  width: 340px;
+  height: 500px;
+}
+.head,
+.body,
+.eye-left,
+.eye-right,
+.buttons > div {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.head {
+  height: 120px;
+  background-color: #fff;
+  top: 100px;
+  left: 110px;
+}
+.eye-left,
+.eye-right {
+  width: 15px;
+  background: var(--dark-grey);
+}
+.eye-left {
+  top: 40px;
+  left: 35px;
+}
+.eye-right {
+  top: 25px;
+  left: 75px;
+}
+.nose {
+  width: 30px;
+  height: 30px;
+  background-color: #f7880f;
+  top: 35px;
+  left: 49px;
+  clip-path: polygon(50% 100%, 30% 0, 70% 0);
+}
+.hat {
+  width: 120px;
+  height: 10px;
+  background-color: var(--dark-grey);
+  border-radius: 4px;
+  bottom: 50px;
+  left: 15px;
+  transform: rotate(20deg);
+}
+.hat-top {
+  height: 50px;
+  width: 90px;
+  background-color: var(--dark-grey);
+  bottom: 42px;
+  left: 15px;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+.body {
+  width: 200px;
+  background-color: #fff;
+  top: 90px;
+  left: 70px;
+}
+.buttons > div {
+  width: 15px;
+  background-color: var(--dark-grey);
+  margin-bottom: 20px;
+}
+.buttons {
+  top: 60px;
+  left: 90px;
+}
+.hand-left,
+.hand-right {
+  width: 100px;
+  height: 5px;
+  background-color: var(--brown);
+}
+.hand-left > div,
+.hand-right > div {
+  width: 30px;
+  height: 5px;
+  bottom: 10px;
+  background-color: var(--brown);
+}
+.hand-left {
+  bottom: 68px;
+  right: 67px;
+  transform: rotate(25deg);
+}
+.hand-left > div {
+  left: 5px;
+  transform: rotate(45deg);
+}
+.hand-right {
+  bottom: 73px;
+  left: 168px;
+  transform: rotate(-25deg);
+}
+.hand-right > div {
+  left: 65px;
+  transform: rotate(-45deg);
+}
+.scarf,
+.scarf3 {
+  width: 35px;
+  background-color: var(--red);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+.scarf {
+  height: 50px;
+  left: 195px;
+  bottom: 90px;
+  transform: rotate(-15deg);
+}
+.scarf2 {
+  width: 120px;
+  height: 35px;
+  background-color: var(--red);
+  bottom: 170px;
+  left: 107px;
+  border-radius: 10px;
+}
+.scarf3 {
+  height: 80px;
+  bottom: 185px;
+  left: 182px;
+  transform: rotate(-10deg);
+}
