@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --skin: #edd9f0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vampire {
+  width: 600px;
+  height: 650px;
+  background-color: #47526d;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.vampire div {
+  position: absolute;
+}
+.head {
+  width: 450px;
+  height: 450px;
+  background-color: var(--skin);
+  border-radius: 50%;
+  top: 10%;
+  overflow: hidden;
+  z-index: 3;
+}
+.hair {
+  width: 450px;
+  height: 135px;
+  background-color: #333;
+}
+.hair::before,
+.hair::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: var(--skin);
+  border-radius: 50%;
+  top: 50%;
+}
+.hair::before {
+  left: 1%;
+}
+.hair::after {
+  right: 1%;
+}
+.left-eye,
+.right-eye,
+.left-eye::before,
+.right-eye::before,
+.left-eye::after,
+.right-eye::after {
+  position: absolute;
+  content: "";
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.left-eye,
+.right-eye {
+  width: 115px;
+  background-color: #fff;
+  top: 30%;
+}
+.left-eye {
+  left: 18%;
+}
+.right-eye {
+  right: 18%;
+}
+.left-eye::before,
+.right-eye::before {
+  width: 70px;
+  background-color: red;
+  left: 30%;
+  top: 20%;
+}
+.left-eye::after,
+.right-eye::after {
+  width: 58px;
+  background-color: #000;
+  left: 38%;
+  top: 20%;
+}
+.left-eye .brow,
+.right-eye .brow {
+  width: 140px;
+  height: 50px;
+  background-color: var(--skin);
+  top: -5%;
+  left: -10%;
+  z-index: 2;
+}
+.left-eye .brow {
+  transform: rotate(15deg);
+}
+.right-eye .brow {
+  transform: rotate(-15deg);
+}
+.nose,
+.mouth {
+  width: 44px;
+  height: 22px;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.nose::before,
+.nose::after,
+.mouth::before,
+.mouth::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.nose::before,
+.nose::after {
+  aspect-ratio: 1/1;
+}
+.nose::before,
+.mouth::before {
+  background-color: #333;
+}
+.nose::before {
+  width: 44px;
+  bottom: 0;
+}
+.nose::after,
+.mouth::after {
+  background-color: var(--skin);
+  left: 2px;
+}
+.nose::after {
+  width: 40px;
+  bottom: 2px;
+}
+.mouth {
+  width: 225px;
+  top: 70%;
+}
+.mouth::before {
+  width: 225px;
+  height: 44px;
+  top: 0;
+}
+.mouth::after {
+  width: 220px;
+  height: 44px;
+  top: 2px;
+}
+.left-tooth,
+.right-tooth {
+  width: 36px;
+  height: 45px;
+  background-color: #fff;
+  top: 71%;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+.left-tooth {
+  left: 35%;
+  transform: rotate(-5deg);
+}
+.right-tooth {
+  right: 35%;
+  transform: rotate(5deg);
+}
+.collar {
+  background-color: #000;
+  height: 40%;
+  width: 100%;
+  top: 65%;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+}
+.cape {
+  width: 60%;
+  height: 30%;
+  background-color: #fff;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+.bow {
+  height: 140px;
+  width: 100px;
+  background-color: #000;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+div.button {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+}
