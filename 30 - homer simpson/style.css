@@ -1,0 +1,260 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #de433f;
+  --yellow: #fed90f;
+  --stubble: #d1b271;
+}
+.head {
+  position: relative;
+  width: 215px;
+  height: 405px;
+}
+.head div {
+  position: absolute;
+}
+.forehead {
+  width: 170px;
+  height: 200px;
+  background-color: var(--yellow);
+  border: 1px solid #000;
+  top: 10px;
+  border-radius: 60%/50%;
+  transform: rotate(-18deg);
+}
+.hair {
+  width: 80px;
+  height: 70px;
+  border-top: 2px solid #000;
+  border-radius: 50%;
+}
+.hair-1 {
+  top: 15px;
+  transform: rotate(-40deg);
+}
+.hair-2 {
+  left: 10px;
+  transform: rotate(-30deg);
+}
+.eye {
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.eye.right {
+  left: 120px;
+  top: 110px;
+}
+.eye.left {
+  top: 115px;
+  left: 60px;
+}
+.pupil {
+  width: 9px;
+  height: 9px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 40px;
+}
+.eye.right .pupil {
+  left: 35px;
+}
+.eye.left .pupil {
+  left: 25px;
+}
+.f-side1 {
+  width: 140px;
+  height: 60px;
+  background-color: var(--yellow);
+  top: 185px;
+  left: 30px;
+}
+.f-side2 {
+  width: 40px;
+  height: 60px;
+  background-color: var(--yellow);
+  top: 165px;
+  left: 22px;
+  transform: rotate(-11deg);
+  border-left: 1px solid #000;
+}
+.nose {
+  width: 60px;
+  height: 32px;
+  background-color: var(--yellow);
+  top: 175px;
+  left: 130px;
+  border-radius: 0 20px 20px 0;
+  border: 1px solid #000;
+  border-left: none;
+}
+.mouth {
+  width: 115px;
+  height: 120px;
+  background-color: var(--stubble);
+  top: 207px;
+  left: 60px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.mouth-part-1 {
+  width: 20px;
+  height: 30px;
+  background-color: var(--stubble);
+  top: 62px;
+  left: 98px;
+  border-radius: 50%;
+  border-right: 1px solid #000;
+  transform: rotate(15deg);
+}
+.mouth-part-2 {
+  width: 120px;
+  height: 60px;
+  background-color: var(--stubble);
+  top: 20px;
+  left: 30px;
+  border-radius: 60%;
+  border-bottom: 1px solid #000;
+  transform: rotate(-6deg);
+}
+.mouth-part-3 {
+  width: 35px;
+  height: 48px;
+  background-color: var(--stubble);
+  top: 230px;
+  left: 165px;
+  border-radius: 10%;
+  border-top: 1px solid #000;
+  transform: rotate(40deg);
+}
+.mouth-part-4 {
+  width: 60px;
+  height: 30px;
+  background-color: var(--stubble);
+  top: 200px;
+  left: 130px;
+  border-right: 1px solid #000;
+  border-top-right-radius: 70%;
+}
+.mouth-part-5 {
+  width: 30px;
+  height: 30px;
+  background-color: var(--stubble);
+  top: 260px;
+  left: 80px;
+}
+.neck {
+  width: 125px;
+  height: 180px;
+  background-color: var(--yellow);
+  top: 200px;
+  left: 28px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: rotate(2deg);
+}
+.collar-middle {
+  top: 350px;
+  left: 110px;
+  border-top: 20px solid transparent;
+  border-right: 25px solid white;
+  border-bottom: 20px solid white;
+  border-left: 25px solid white;
+}
+.collar-middle::before,
+.collar-middle::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  transform-origin: top;
+  top: -7px;
+}
+.collar-middle::before {
+  left: -17px;
+  transform: rotate(40deg);
+}
+.collar-middle::after {
+  right: -17px;
+  transform: rotate(-40deg);
+}
+.collar {
+  background-color: white;
+  border-radius: 10%;
+  border: 1px solid #000;
+}
+.collar.left {
+  width: 110px;
+  height: 60px;
+  top: 330px;
+  left: 10px;
+  transform: rotate(15deg);
+}
+.collar.right {
+  width: 20px;
+  height: 50px;
+  top: 340px;
+  left: 150px;
+  transform: rotate(-20deg);
+}
+.ear {
+  width: 32px;
+  height: 37px;
+  background-color: var(--yellow);
+  top: 200px;
+  left: 10px;
+  border-radius: 50%;
+  transform: rotate(10deg);
+  border: 1px solid #000;
+  border-right-color: transparent;
+}
+.ear-1 {
+  width: 15px;
+  height: 12px;
+  top: 14px;
+  left: 7px;
+  border-top: 1px solid #000;
+  border-radius: 40% 40% 0 0;
+}
+.ear-2 {
+  width: 8px;
+  height: 8px;
+  top: 0px;
+  left: 7px;
+  border-left: 1px solid #000;
+}
+.hair-side {
+  width: 50px;
+  height: 40px;
+  top: 158px;
+  left: 2px;
+  transform: rotate(-10deg);
+}
+.hair-strand {
+  width: 1px;
+  height: 40px;
+  background-color: #000;
+  top: 0px;
+  transform-origin: top;
+}
+.hair-strand-1 {
+  left: 11px;
+  transform: rotate(5deg);
+}
+.hair-strand-2 {
+  transform: rotate(-20deg);
+  left: 11px;
+}
+.hair-strand-3 {
+  transform: rotate(20deg);
+  right: 11px;
+}
+.hair-strand-4 {
+  right: 11px;
+  transform: rotate(-5deg);
+}
