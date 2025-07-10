@@ -6,7 +6,7 @@ body {
   background-color: #262626;
 }
 .logo,
-.line-1,
+.g-border,
 .circle {
   aspect-ratio: 1 / 1;
 }
@@ -18,26 +18,22 @@ body {
 }
 .logo > div {
   position: absolute;
+  background-color: white;
 }
-.line-1,
-.line-3 {
+.g-border,
+.l-line-1 {
   top: 50%;
   left: 50%;
 }
-.line-1 {
+div.g-border {
   width: 400px;
   transform: translate(-50%, -50%) rotate(-45deg);
   border-radius: 50%;
   border: 20px solid white;
   border-right-color: transparent;
+  background-color: transparent;
 }
-.line-2,
-.line-3,
-.line-4,
-.circle {
-  background-color: white;
-}
-.line-2 {
+.g-tail {
   width: 150px;
   height: 20px;
   top: 50%;
@@ -50,12 +46,12 @@ body {
   top: 120px;
   left: 130px;
 }
-.line-3 {
+.l-line-1 {
   width: 20px;
   height: 250px;
   transform: translate(-50%, -50%);
 }
-.line-4 {
+.l-line-2 {
   width: 70px;
   height: 20px;
   top: 370px;

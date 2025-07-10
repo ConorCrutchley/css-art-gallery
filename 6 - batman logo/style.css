@@ -17,10 +17,7 @@ body {
   align-items: center;
   overflow: hidden;
 }
-.logo,
-.o,
-.sq,
-.ears {
+.oval div {
   position: absolute;
 }
 .logo,
@@ -36,10 +33,11 @@ body {
 .sq {
   background-color: var(--yellow);
 }
-.o1,
-.o2 {
-  width: 33px;
+.o-bottom {
   height: 70px;
+}
+.o-edge {
+  width: 33px;
   top: 67px;
 }
 .o1 {
@@ -50,10 +48,8 @@ body {
   right: 44px;
   transform: rotate(41deg);
 }
-.o3,
-.o4 {
+.o-center {
   width: 38px;
-  height: 70px;
   top: 73px;
 }
 .o3 {
@@ -64,8 +60,7 @@ body {
   right: 68px;
   transform: rotate(15deg);
 }
-.o5,
-.o6 {
+.o-top {
   width: 37px;
   height: 40px;
 }

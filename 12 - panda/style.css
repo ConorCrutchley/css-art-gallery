@@ -4,10 +4,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.panda,
-.eye-ball,
-.nose,
-.ear {
+.circle {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
 }
@@ -17,18 +14,8 @@ body {
   border: 12px solid black;
   position: relative;
 }
-.eye,
-.eye-ball,
-.nose,
-.mouth,
-.ear {
+.panda div {
   position: absolute;
-}
-.eye,
-.eye-ball,
-.nose,
-.mouth,
-.ear {
   background-color: black;
 }
 .eye {
@@ -38,11 +25,11 @@ body {
   border-radius: 0 0 115px 115px;
   overflow: hidden;
 }
-.eye-left {
+.eye.left {
   left: 10px;
   transform: rotate(30deg);
 }
-.eye-right {
+.eye.right {
   right: 10px;
   transform: rotate(-30deg);
 }
@@ -51,10 +38,10 @@ body {
   border: 12px solid white;
   top: -50%;
 }
-.eye-left > .eye-ball {
+.eye.left > .eye-ball {
   left: 32%;
 }
-.eye-right > .eye-ball {
+.eye.right > .eye-ball {
   right: 32%;
 }
 .nose {
@@ -76,9 +63,9 @@ body {
   top: -30px;
   z-index: -1;
 }
-.ear-left {
+.ear.left {
   left: -35px;
 }
-.ear-right {
+.ear.right {
   right: -35px;
 }

@@ -8,9 +8,8 @@ body {
   padding: 0;
 }
 .git,
-.line1::before,
-.line1::after,
-.line2::before {
+.line::before,
+.line1::after {
   aspect-ratio: 1 / 1;
 }
 .git {
@@ -29,6 +28,7 @@ body {
   position: absolute;
   background-color: white;
 }
+/* The circles in the logo */
 .line::before,
 .line1::after {
   content: "";

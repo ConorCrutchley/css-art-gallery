@@ -16,14 +16,13 @@ body {
   width: 350px;
   height: 600px;
 }
-.eye,
-.eyeball,
-.cheek,
-.tongue,
+.container div {
+  position: absolute;
+}
+.circle,
 .mouth::before,
 .mouth::after {
   aspect-ratio: 1/1;
-  position: absolute;
   border-radius: 50%;
 }
 .eye {
@@ -72,6 +71,7 @@ body {
 }
 .mouth::before,
 .mouth::after {
+  position: absolute;
   content: "";
   width: 64px;
   background-color: var(--yellow);

@@ -9,9 +9,7 @@ body,
   justify-content: center;
   align-items: center;
 }
-.logo,
-.square,
-.circle {
+div {
   aspect-ratio: 1/1;
 }
 .logo {

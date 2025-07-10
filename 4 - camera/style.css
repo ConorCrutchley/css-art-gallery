@@ -38,10 +38,11 @@ body {
   background-color: #00695c;
 }
 .inner-lens-2 {
-  border-top: 31px solid #00897b;
-  border-right: 31px solid #4db6ac;
-  border-bottom: 31px solid #80cbc4;
-  border-left: 31px solid #26a69a;
+  border: 31px solid;
+  border-top-color: #00897b;
+  border-right-color: #4db6ac;
+  border-bottom-color: #80cbc4;
+  border-left-color: #26a69a;
 }
 .flash,
 .button {

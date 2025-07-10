@@ -6,6 +6,7 @@ body {
   background-color: #de433f;
   --yellow: #fed90f;
   --stubble: #d1b271;
+  --border: 1px solid #000;
 }
 .head {
   position: relative;
@@ -19,7 +20,7 @@ body {
   width: 170px;
   height: 200px;
   background-color: var(--yellow);
-  border: 1px solid #000;
+  border: var(--border);
   top: 10px;
   border-radius: 60%/50%;
   transform: rotate(-18deg);
@@ -42,7 +43,7 @@ body {
   width: 75px;
   height: 75px;
   background-color: white;
-  border: 1px solid #000;
+  border: var(--border);
   border-radius: 50%;
 }
 .eye.right {
@@ -80,7 +81,7 @@ body {
   top: 165px;
   left: 22px;
   transform: rotate(-11deg);
-  border-left: 1px solid #000;
+  border-left: var(--border);
 }
 .nose {
   width: 60px;
@@ -89,7 +90,7 @@ body {
   top: 175px;
   left: 130px;
   border-radius: 0 20px 20px 0;
-  border: 1px solid #000;
+  border: var(--border);
   border-left: none;
 }
 .mouth {
@@ -99,7 +100,7 @@ body {
   top: 207px;
   left: 60px;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: var(--border);
 }
 .mouth-part-1 {
   width: 20px;
@@ -108,7 +109,7 @@ body {
   top: 62px;
   left: 98px;
   border-radius: 50%;
-  border-right: 1px solid #000;
+  border-right: var(--border);
   transform: rotate(15deg);
 }
 .mouth-part-2 {
@@ -118,7 +119,7 @@ body {
   top: 20px;
   left: 30px;
   border-radius: 60%;
-  border-bottom: 1px solid #000;
+  border-bottom: var(--border);
   transform: rotate(-6deg);
 }
 .mouth-part-3 {
@@ -128,7 +129,7 @@ body {
   top: 230px;
   left: 165px;
   border-radius: 10%;
-  border-top: 1px solid #000;
+  border-top: var(--border);
   transform: rotate(40deg);
 }
 .mouth-part-4 {
@@ -137,7 +138,7 @@ body {
   background-color: var(--stubble);
   top: 200px;
   left: 130px;
-  border-right: 1px solid #000;
+  border-right: var(--border);
   border-top-right-radius: 70%;
 }
 .mouth-part-5 {
@@ -153,8 +154,8 @@ body {
   background-color: var(--yellow);
   top: 200px;
   left: 28px;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-left: var(--border);
+  border-right: var(--border);
   transform: rotate(2deg);
 }
 .collar-middle {
@@ -186,7 +187,7 @@ body {
 .collar {
   background-color: white;
   border-radius: 10%;
-  border: 1px solid #000;
+  border: var(--border);
 }
 .collar.left {
   width: 110px;
@@ -210,7 +211,7 @@ body {
   left: 10px;
   border-radius: 50%;
   transform: rotate(10deg);
-  border: 1px solid #000;
+  border: var(--border);
   border-right-color: transparent;
 }
 .ear-1 {
@@ -218,7 +219,7 @@ body {
   height: 12px;
   top: 14px;
   left: 7px;
-  border-top: 1px solid #000;
+  border-top: var(--border);
   border-radius: 40% 40% 0 0;
 }
 .ear-2 {
@@ -226,7 +227,7 @@ body {
   height: 8px;
   top: 0px;
   left: 7px;
-  border-left: 1px solid #000;
+  border-left: var(--border);
 }
 .hair-side {
   width: 50px;

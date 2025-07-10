@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   --white: #faffce;
-  --dark-grey: #22293a;
 }
 body {
   height: 100vh;
@@ -24,33 +23,27 @@ body {
 .container div {
   position: absolute;
 }
-.head,
-.head-copy {
+.head {
   width: 240px;
   height: 300px;
   background-color: var(--white);
   border-radius: 90px 90px 0 0;
 }
-.head-copy {
-  z-index: 2;
-}
-.ear-left,
-.ear-right {
+.ear {
   width: 75px;
   height: 75px;
   background-color: #d7e2e8;
   border: 15px solid var(--white);
   border-radius: 50%;
-  z-index: 1;
+  top: 25%;
 }
-.ear-left {
-  left: -15%;
+.ear.left {
+  left: 15%;
 }
-.ear-right {
-  right: -15%;
+.ear.right {
+  right: 15%;
 }
-.left-eye,
-.right-eye {
+.eye {
   width: 24px;
   height: 24px;
   background-color: #2a3144;
@@ -58,10 +51,10 @@ body {
   border-radius: 50%;
   top: 25%;
 }
-.left-eye {
+.eye.left {
   left: 25%;
 }
-.right-eye {
+.eye.right {
   right: 25%;
 }
 .muzzle {
@@ -78,7 +71,7 @@ body {
   align-items: center;
 }
 .muzzle > div {
-  background-color: var(--dark-grey);
+  background-color: #22293a;
 }
 .nose {
   width: 32px;

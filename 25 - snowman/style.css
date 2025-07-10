@@ -17,11 +17,7 @@ div {
   width: 340px;
   height: 500px;
 }
-.head,
-.body,
-.eye-left,
-.eye-right,
-.buttons > div {
+.circle {
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
@@ -31,16 +27,15 @@ div {
   top: 100px;
   left: 110px;
 }
-.eye-left,
-.eye-right {
+.eye {
   width: 15px;
   background: var(--dark-grey);
 }
-.eye-left {
+.eye.left {
   top: 40px;
   left: 35px;
 }
-.eye-right {
+.eye.right {
   top: 25px;
   left: 75px;
 }
@@ -84,34 +79,32 @@ div {
   top: 60px;
   left: 90px;
 }
-.hand-left,
-.hand-right {
+.hand {
   width: 100px;
   height: 5px;
   background-color: var(--brown);
 }
-.hand-left > div,
-.hand-right > div {
+.hand > div {
   width: 30px;
   height: 5px;
   bottom: 10px;
   background-color: var(--brown);
 }
-.hand-left {
+.hand.left {
   bottom: 68px;
   right: 67px;
   transform: rotate(25deg);
 }
-.hand-left > div {
+.hand.left > div {
   left: 5px;
   transform: rotate(45deg);
 }
-.hand-right {
+.hand.right {
   bottom: 73px;
   left: 168px;
   transform: rotate(-25deg);
 }
-.hand-right > div {
+.hand.right > div {
   left: 65px;
   transform: rotate(-45deg);
 }

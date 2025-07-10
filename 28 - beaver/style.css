@@ -16,7 +16,17 @@ body {
   border: 20px solid white;
   position: relative;
 }
-.frame div {
+.frame div,
+.bow::before,
+.heart::before,
+.heart::after,
+.lashes::before,
+.lashes::after,
+.muzzle::before,
+.teeth::before,
+.whiskers::before,
+.whiskers::after {
+  content: "";
   position: absolute;
 }
 .body {
@@ -28,19 +38,18 @@ body {
   transform: translateX(-50%);
   border-radius: 50% 50% 0 0;
 }
-.arm-left,
-.arm-right {
+.arm {
   width: 45%;
   height: 20%;
   background-color: var(--medium-brown);
   bottom: 10%;
 }
-.arm-left {
+.arm.left {
   left: 0;
   border-radius: 0 50px 50px 0;
   transform: skewY(5deg);
 }
-.arm-right {
+.arm.right {
   right: 0;
   border-radius: 50px 0 0 50px;
   transform: skewY(-5deg);
@@ -58,8 +67,6 @@ body {
   transform: rotate(10deg);
 }
 .bow::before {
-  content: "";
-  position: absolute;
   border-radius: 15% 50% 50% 15%;
   left: -30px;
 }
@@ -77,8 +84,6 @@ body {
 }
 .heart::before,
 .heart::after {
-  content: "";
-  position: absolute;
   border-radius: 50%;
 }
 .heart::before {
@@ -87,8 +92,7 @@ body {
 .heart::after {
   transform: translateX(-50%);
 }
-.eye-left,
-.eye-right {
+.eye {
   width: 20px;
   height: 10px;
   border: 3px solid var(--dark-brown);
@@ -96,10 +100,10 @@ body {
   border-radius: 0 0 100px 100px;
   top: 35%;
 }
-.eye-left {
+.eye.left {
   left: 32%;
 }
-.eye-right {
+.eye.right {
   right: 32%;
 }
 .lashes,
@@ -115,8 +119,6 @@ body {
 }
 .lashes::before,
 .lashes::after {
-  position: absolute;
-  content: "";
   top: -2px;
 }
 .lashes::before {
@@ -140,8 +142,6 @@ body {
   transform: rotate(-10deg);
 }
 .muzzle::before {
-  content: "";
-  position: absolute;
   left: 100%;
   border-radius: 0 50px 50px 0;
   transform: rotate(20deg);
@@ -164,8 +164,6 @@ body {
   border-radius: 5px;
 }
 .teeth::before {
-  content: "";
-  position: absolute;
   width: 2px;
   height: 100%;
   background-color: var(--brown);
@@ -175,8 +173,6 @@ body {
 .whiskers,
 .whiskers::before,
 .whiskers::after {
-  content: "";
-  position: absolute;
   width: 105px;
   height: 2px;
   background-color: var(--medium-brown);
@@ -214,8 +210,7 @@ body {
   right: 5px;
   transform: rotate(20deg);
 }
-.ear-left,
-.ear-right {
+.ear {
   width: 38px;
   height: 46px;
   background-color: #f0a77e;
@@ -223,11 +218,11 @@ body {
   top: 15%;
   border-radius: 50%;
 }
-.ear-left {
+.ear.left {
   left: 18%;
   transform: rotate(-45deg);
 }
-.ear-right {
+.ear.right {
   right: 18%;
   transform: rotate(45deg);
 }

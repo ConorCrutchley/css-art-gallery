@@ -52,45 +52,38 @@ body {
 .hair::after {
   right: 1%;
 }
-.left-eye,
-.right-eye,
-.left-eye::before,
-.right-eye::before,
-.left-eye::after,
-.right-eye::after {
+.eye,
+.eye::before,
+.eye::after {
   position: absolute;
   content: "";
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
-.left-eye,
-.right-eye {
+.eye {
   width: 115px;
   background-color: #fff;
   top: 30%;
 }
-.left-eye {
+.eye.left {
   left: 18%;
 }
-.right-eye {
+.eye.right {
   right: 18%;
 }
-.left-eye::before,
-.right-eye::before {
+.eye::before {
   width: 70px;
   background-color: red;
   left: 30%;
   top: 20%;
 }
-.left-eye::after,
-.right-eye::after {
+.eye::after {
   width: 58px;
   background-color: #000;
   left: 38%;
   top: 20%;
 }
-.left-eye .brow,
-.right-eye .brow {
+.eye .brow {
   width: 140px;
   height: 50px;
   background-color: var(--skin);
@@ -98,14 +91,13 @@ body {
   left: -10%;
   z-index: 2;
 }
-.left-eye .brow {
+.eye.left .brow {
   transform: rotate(15deg);
 }
-.right-eye .brow {
+.eye.right .brow {
   transform: rotate(-15deg);
 }
-.nose,
-.mouth {
+.lower-face {
   width: 44px;
   height: 22px;
   top: 60%;
@@ -113,30 +105,26 @@ body {
   transform: translateX(-50%);
   overflow: hidden;
 }
-.nose::before,
-.nose::after,
-.mouth::before,
-.mouth::after {
+.lower-face::before,
+.lower-face::after {
   content: "";
   position: absolute;
   border-radius: 50%;
+}
+.lower-face::before {
+  background-color: #333;
+}
+.lower-face::after {
+  background-color: var(--skin);
+  left: 2px;
 }
 .nose::before,
 .nose::after {
   aspect-ratio: 1/1;
 }
-.nose::before,
-.mouth::before {
-  background-color: #333;
-}
 .nose::before {
   width: 44px;
   bottom: 0;
-}
-.nose::after,
-.mouth::after {
-  background-color: var(--skin);
-  left: 2px;
 }
 .nose::after {
   width: 40px;
@@ -156,19 +144,18 @@ body {
   height: 44px;
   top: 2px;
 }
-.left-tooth,
-.right-tooth {
+.tooth {
   width: 36px;
   height: 45px;
   background-color: #fff;
   top: 71%;
   clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
-.left-tooth {
+.tooth.left {
   left: 35%;
   transform: rotate(-5deg);
 }
-.right-tooth {
+.tooth.right {
   right: 35%;
   transform: rotate(5deg);
 }

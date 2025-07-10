@@ -66,9 +66,13 @@ body {
   top: -12px;
   border-radius: 90px 90px 0 0;
 }
-.clock-alarm::before {
+.clock-alarm::before,
+.book::before,
+.book::after {
   content: "";
   position: absolute;
+}
+.clock-alarm::before {
   width: 15px;
   height: 8px;
   background-color: var(--red);
@@ -106,11 +110,6 @@ body {
   left: 210px;
   top: -170px;
 }
-.book::before,
-.book::after {
-  content: "";
-  position: absolute;
-}
 .book::before {
   width: 100%;
   height: 20px;
@@ -119,7 +118,6 @@ body {
   left: 0;
 }
 .book::after {
-  content: "";
   width: 50%;
   height: 100%;
   background-color: black;
@@ -163,18 +161,17 @@ body {
   top: 0;
   left: -20%;
 }
-.plant-left,
-.plant-right {
+.plant {
   background-color: var(--green);
   border-radius: 50px 50px 0 0;
   width: 45%;
   bottom: 50%;
 }
-.plant-left {
+.plant.left {
   height: 35%;
   left: 5%;
 }
-.plant-right {
+.plant.right {
   height: 50%;
   right: 5%;
 }
