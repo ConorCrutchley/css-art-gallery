@@ -24,14 +24,17 @@ body {
   width: 250px;
   border-radius: 25%;
   background-color: white;
-  transform: translate(-47%, -35%) rotate(-18deg);
+  top: -80px;
+  left: -120px;
+  transform: rotate(-18deg);
 }
 .pepsi::after {
   aspect-ratio: 11 / 10;
   width: 275px;
   border-radius: 50%;
   background-color: #da473c;
-  transform: translate(-54.54%, -50%);
+  top: -138px;
+  left: -150px;
 }
 @media (min-width: 380px) {
   .pepsi {
@@ -40,9 +43,13 @@ body {
   }
   .pepsi::before {
     width: 375px;
+    top: -120px;
+    left: -180px;
   }
   .pepsi::after {
     width: 412.5px;
+    top: -206.25px;
+    left: -225px;
   }
 }
 @media (min-width: 720px) {
@@ -52,8 +59,12 @@ body {
   }
   .pepsi::before {
     width: 500px;
+    top: -160px;
+    left: -240px;
   }
   .pepsi::after {
     width: 550px;
+    top: -275px;
+    left: -300px;
   }
 }
