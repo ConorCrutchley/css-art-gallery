@@ -4,6 +4,9 @@
   --light-grey: #eee;
   --mid-grey: #ddd;
   --dark-grey: #ccc;
+  --border-inline-size: 85px;
+  --border-margin-size: 50px;
+  --heart-size: 16px;
 }
 body {
   margin: 0;
@@ -16,14 +19,14 @@ body {
 .card {
   width: 0;
   height: 0;
-  border-top: 100px solid var(--light-grey);
-  border-right: 170px solid var(--mid-grey);
-  border-bottom: 100px solid var(--dark-grey);
-  border-left: 170px solid var(--dark-grey);
+  border-top: var(--border-margin-size) solid var(--light-grey);
+  border-right: var(--border-inline-size) solid var(--mid-grey);
+  border-bottom: var(--border-margin-size) solid var(--dark-grey);
+  border-left: var(--border-inline-size) solid var(--dark-grey);
 }
 .heart {
-  width: 32px;
-  height: 32px;
+  aspect-ratio: 1/1;
+  width: var(--heart-size);
   background-color: var(--red);
   transform: translate(-50%, -50%) rotate(45deg);
   animation: heartbeat 1.4s linear infinite;
@@ -64,5 +67,19 @@ body {
   }
   100% {
     transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+}
+@media (min-width: 380px) {
+  * {
+    --border-inline-size: 128px;
+    --border-margin-size: 75px;
+    --heart-size: 24px;
+  }
+}
+@media (min-width: 720px) {
+  * {
+    --border-inline-size: 170px;
+    --border-margin-size: 100px;
+    --heart-size: 32px;
   }
 }
