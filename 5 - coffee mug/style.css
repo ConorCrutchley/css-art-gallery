@@ -8,23 +8,61 @@ body {
 }
 .coffee-mug {
   position: relative;
-  width: 150px;
-  height: 150px;
   background-color: #3f2616;
   border-radius: 50%;
-  box-shadow: 0 0 0 10px #442918, 0 0 0 25px var(--coffee-main),
-    0 0 0 42px #fe9407, 0 0 0 65px #feaa3a, 0 120px 0 -25px var(--coffee-main),
-    100px 70px 0 -25px var(--coffee-main), 80px 140px 0 -10px var(--coffee-main),
-    0px 210px 0 -55px var(--coffee-main), 20px 250px 0 -65px var(--coffee-main);
+  aspect-ratio: 1 / 1;
+  width: 75px;
+  box-shadow: 0 0 0 5px #442918, 0 0 0 12.5px var(--coffee-main),
+    0 0 0 21px #fe9407, 0 0 0 32.5px #feaa3a,
+    0 60px 0 -12.5px var(--coffee-main), 50px 35px 0 -12.5px var(--coffee-main),
+    40px 70px 0 -5px var(--coffee-main), 0px 105px 0 -27.5px var(--coffee-main),
+    10px 125px 0 -32.5px var(--coffee-main);
 }
 .coffee-mug::before {
   content: "";
   position: absolute;
-  height: 75px;
-  width: 60px;
   background-color: #e49934;
-  top: -85px;
-  right: -75px;
-  border-radius: 5px;
   transform: rotate(45deg);
+  height: 37.5px;
+  width: 30px;
+  top: -42.5px;
+  right: -37.5px;
+  border-radius: 2.5px;
+}
+@media (min-width: 380px) {
+  .coffee-mug {
+    width: 100px;
+    box-shadow: 0 0 0 7.5px #442918, 0 0 0 18.75px var(--coffee-main),
+      0 0 0 31.5px #fe9407, 0 0 0 48.75px #feaa3a,
+      0 90px 0 -18.75px var(--coffee-main),
+      75px 52.5px 0 -18.75px var(--coffee-main),
+      60px 105px 0 -7.5px var(--coffee-main),
+      0px 157.5px 0 -36.25px var(--coffee-main),
+      15px 187.5px 0 -42.75px var(--coffee-main);
+  }
+  .coffee-mug::before {
+    height: 56.25px;
+    width: 45px;
+    top: -63.75px;
+    right: -56.25px;
+    border-radius: 3.75px;
+  }
+}
+@media (min-width: 720px) {
+  .coffee-mug {
+    width: 150px;
+    box-shadow: 0 0 0 10px #442918, 0 0 0 25px var(--coffee-main),
+      0 0 0 42px #fe9407, 0 0 0 65px #feaa3a, 0 120px 0 -25px var(--coffee-main),
+      100px 70px 0 -25px var(--coffee-main),
+      80px 140px 0 -10px var(--coffee-main),
+      0px 210px 0 -55px var(--coffee-main),
+      20px 250px 0 -65px var(--coffee-main);
+  }
+  .coffee-mug::before {
+    height: 75px;
+    width: 60px;
+    top: -85px;
+    right: -75px;
+    border-radius: 5px;
+  }
 }
