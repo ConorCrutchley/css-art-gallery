@@ -6,11 +6,11 @@ body {
   background-image: linear-gradient(135deg, #00a6b7, #73fac9);
 }
 .pepsi {
-  height: 300px;
-  width: 300px;
+  aspect-ratio: 1/1;
+  width: 150px;
   background-color: #34588e;
   border-radius: 50%;
-  border: 10px solid white;
+  border: 5px solid white;
   position: relative;
   overflow: hidden;
 }
@@ -20,19 +20,40 @@ body {
   position: absolute;
 }
 .pepsi::before {
-  height: 400px;
-  width: 500px;
+  aspect-ratio: 5 / 4;
+  width: 250px;
   border-radius: 25%;
   background-color: white;
-  top: -160px;
-  left: -240px;
-  transform: rotate(-18deg);
+  transform: translate(-47%, -35%) rotate(-18deg);
 }
 .pepsi::after {
-  height: 500px;
-  width: 550px;
+  aspect-ratio: 11 / 10;
+  width: 275px;
   border-radius: 50%;
   background-color: #da473c;
-  top: -275px;
-  left: -300px;
+  transform: translate(-54.54%, -50%);
+}
+@media (min-width: 380px) {
+  .pepsi {
+    width: 225px;
+    border: 7.5px solid white;
+  }
+  .pepsi::before {
+    width: 375px;
+  }
+  .pepsi::after {
+    width: 412.5px;
+  }
+}
+@media (min-width: 720px) {
+  .pepsi {
+    width: 300px;
+    border: 10px solid white;
+  }
+  .pepsi::before {
+    width: 500px;
+  }
+  .pepsi::after {
+    width: 550px;
+  }
 }
