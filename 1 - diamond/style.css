@@ -4,6 +4,8 @@
   --mid-green-one: #20bc7d;
   --mid-green-two: #26c893;
   --dark-green: #1fb67c;
+  --diamond-size: 100px;
+  --border-size: 25px;
 }
 body {
   margin: 0;
@@ -16,8 +18,8 @@ body {
 }
 .diamond {
   position: relative;
-  width: 200px;
-  height: 200px;
+  aspect-ratio: 1/1;
+  width: var(--diamond-size);
   transform: rotate(45deg);
 }
 span {
@@ -26,14 +28,14 @@ span {
   height: 0;
   top: 0;
   left: 0;
-  border-top: 50px solid var(--dark-green);
-  border-right: 50px solid var(--mid-green-one);
-  border-bottom: 50px solid var(--mid-green-two);
-  border-left: 50px solid var(--light-green);
+  border-top: var(--border-size) solid var(--dark-green);
+  border-right: var(--border-size) solid var(--mid-green-one);
+  border-bottom: var(--border-size) solid var(--mid-green-two);
+  border-left: var(--border-size) solid var(--light-green);
 }
 span:nth-child(1) {
-  border-top: 50px solid transparent;
-  border-left: 50px solid transparent;
+  border-top: var(--border-size) solid transparent;
+  border-left: var(--border-size) solid transparent;
 }
 span:nth-child(2) {
   left: 50%;
@@ -44,4 +46,10 @@ span:nth-child(3) {
 span:nth-child(4) {
   top: 50%;
   left: 50%;
+}
+@media (min-width: 720px) {
+  * {
+    --diamond-size: 200px;
+    --border-size: 50px;
+  }
 }
