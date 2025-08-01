@@ -9,7 +9,8 @@ body {
   border-radius: 50%;
 }
 .panda {
-  width: 300px;
+  width: 80%;
+  max-width: 300px;
   background-color: white;
   border: 12px solid black;
   position: relative;
@@ -19,22 +20,22 @@ body {
   background-color: black;
 }
 .eye {
-  width: 115px;
-  height: 58px;
+  aspect-ratio: 115 / 58;
+  width: 38.3%;
   top: 45%;
   border-radius: 0 0 115px 115px;
   overflow: hidden;
 }
 .eye.left {
-  left: 10px;
+  left: 3%;
   transform: rotate(30deg);
 }
 .eye.right {
-  right: 10px;
+  right: 3%;
   transform: rotate(-30deg);
 }
 .eye-ball {
-  width: 30px;
+  width: 26%;
   border: 12px solid white;
   top: -50%;
 }
@@ -45,27 +46,27 @@ body {
   right: 32%;
 }
 .nose {
-  width: 16px;
+  width: 5%;
   top: 60%;
   left: 50%;
   transform: translateX(-50%);
 }
 .mouth {
-  width: 50px;
-  height: 10px;
+  aspect-ratio: 5 / 1;
+  width: 16%;
   border-radius: 10px;
   top: 75%;
   left: 50%;
   transform: translateX(-50%);
 }
 .ear {
-  width: 130px;
-  top: -30px;
+  width: 43%;
+  top: -10%;
   z-index: -1;
 }
 .ear.left {
-  left: -35px;
+  left: -11.6%;
 }
 .ear.right {
-  right: -35px;
+  right: -11.6%;
 }
