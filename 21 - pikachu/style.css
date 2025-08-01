@@ -64,9 +64,9 @@ body {
   height: 96px;
   background-color: #83342f;
   border-radius: 16px 15px 50% 50%;
-  position: absolute;
-  left: 36%;
+  left: 50%;
   top: 50%;
+  transform: translateX(-50%);
   overflow: hidden;
 }
 .mouth::before,
@@ -88,6 +88,14 @@ body {
   background-color: #e97b7c;
   top: 61%;
   left: 16%;
+}
+.moustache {
+  width: 96px;
+  height: 10px;
+  background-color: var(--yellow);
+  top: calc(50% - 9px);
+  left: 50%;
+  transform: translateX(-50%);
 }
 @keyframes eyes {
   0% {
