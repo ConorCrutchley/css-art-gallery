@@ -13,8 +13,9 @@ body {
 }
 .container {
   position: relative;
-  width: 600px;
-  height: 420px;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 10 / 7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,14 +27,14 @@ body {
   border-radius: 50%;
 }
 .head {
-  width: 300px;
-  height: 285px;
+  aspect-ratio: 20 / 19;
+  width: 50%;
   background-color: var(--fur);
   border-radius: 50%;
 }
 .ear {
-  width: 180px;
-  height: 185px;
+  aspect-ratio: 36/37;
+  width: 30%;
   background-color: var(--fur);
   top: 42%;
   display: flex;
@@ -54,8 +55,8 @@ body {
   background-color: #819caf;
 }
 .eye {
-  width: 90px;
-  height: 95px;
+  aspect-ratio: 18/19;
+  width: 30%;
   background-color: #fff;
   z-index: 3;
   top: 25%;
@@ -67,15 +68,15 @@ body {
   right: 21%;
 }
 .pupil {
-  width: 25px;
-  height: 29px;
+  aspect-ratio: 25 / 29;
+  width: 27%;
   background-color: #27354a;
   top: 35%;
   left: 36%;
 }
 .nose {
-  width: 75px;
-  height: 120px;
+  aspect-ratio: 5 / 8;
+  width: 25%;
   background-color: #be845f;
   z-index: 4;
   left: 37%;
@@ -83,8 +84,8 @@ body {
   border-radius: 50px;
 }
 .hair {
-  width: 60px;
-  height: 57px;
+  aspect-ratio: 20 / 19;
+  width: 20%;
   background-color: var(--fur);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
