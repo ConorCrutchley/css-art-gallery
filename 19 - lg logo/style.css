@@ -11,7 +11,8 @@ body {
   aspect-ratio: 1 / 1;
 }
 .logo {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   background-color: #e31837;
   border-radius: 50%;
   position: relative;
@@ -26,34 +27,44 @@ body {
   left: 50%;
 }
 div.g-border {
-  width: 400px;
+  width: 80%;
   transform: translate(-50%, -50%) rotate(-45deg);
   border-radius: 50%;
-  border: 20px solid white;
+  border: 11px solid white;
   border-right-color: transparent;
   background-color: transparent;
 }
 .g-tail {
-  width: 150px;
-  height: 20px;
+  aspect-ratio: 15 / 2;
+  width: 30%;
   top: 50%;
-  right: 30px;
+  right: 6%;
   transform: translateY(-50%);
 }
 .circle {
-  width: 50px;
+  width: 10%;
   border-radius: 50%;
-  top: 120px;
-  left: 130px;
+  top: 24%;
+  left: 26%;
 }
 .l-line-1 {
-  width: 20px;
-  height: 250px;
+  aspect-ratio: 2 / 25;
+  width: 4%;
   transform: translate(-50%, -50%);
 }
 .l-line-2 {
-  width: 70px;
-  height: 20px;
-  top: 370px;
-  left: 240px;
+  aspect-ratio: 7/2;
+  width: 14%;
+  top: 74%;
+  left: 48%;
+}
+@media (min-width: 380px) {
+  div.g-border {
+    border-width: 16px;
+  }
+}
+@media (min-width: 720px) {
+  div.g-border {
+    border-width: 20px;
+  }
 }
