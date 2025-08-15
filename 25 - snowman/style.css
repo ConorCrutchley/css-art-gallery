@@ -14,123 +14,127 @@ div {
   position: relative;
 }
 .snowman {
-  width: 340px;
-  height: 500px;
+  aspect-ratio: 17/25;
+  width: 100%;
 }
 .circle {
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
 .head {
-  height: 120px;
+  height: 24%;
   background-color: #fff;
-  top: 100px;
-  left: 110px;
+  top: 20%;
+  left: 32.35294117647059%;
 }
 .eye {
-  width: 15px;
+  width: 12.5%;
   background: var(--dark-grey);
 }
 .eye.left {
-  top: 40px;
-  left: 35px;
+  top: 33.33333333333333%;
+  left: 29.166666666666668%;
 }
 .eye.right {
-  top: 25px;
-  left: 75px;
+  top: 20.833333333333336%;
+  left: 62.5%;
 }
 .nose {
-  width: 30px;
-  height: 30px;
+  aspect-ratio: 1 / 1;
+  width: 25%;
   background-color: #f7880f;
-  top: 35px;
-  left: 49px;
+  top: 29.166666666666668%;
+  left: 40.833333333333336%;
   clip-path: polygon(50% 100%, 30% 0, 70% 0);
 }
 .hat {
-  width: 120px;
-  height: 10px;
+  width: 100%;
+  height: 10%;
   background-color: var(--dark-grey);
   border-radius: 4px;
-  bottom: 50px;
-  left: 15px;
+  bottom: 41.66666666666667%;
+  left: 12.5%;
   transform: rotate(20deg);
 }
 .hat-top {
-  height: 50px;
-  width: 90px;
+  aspect-ratio: 9 / 5;
+  width: 75%;
   background-color: var(--dark-grey);
-  bottom: 42px;
-  left: 15px;
+  bottom: 400%;
+  left: 12.5%;
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 .body {
-  width: 200px;
+  width: 58.82352941176471%;
   background-color: #fff;
-  top: 90px;
-  left: 70px;
-}
-.buttons > div {
-  width: 15px;
-  background-color: var(--dark-grey);
-  margin-bottom: 20px;
+  top: 18%;
+  left: 20.588235294117645%;
 }
 .buttons {
-  top: 60px;
-  left: 90px;
+  top: 30%;
+  left: 45%;
+  width: 100%;
+  aspect-ratio: 40 / 17;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.buttons > div {
+  width: 7.5%;
+  background-color: var(--dark-grey);
 }
 .hand {
-  width: 100px;
-  height: 5px;
+  aspect-ratio: 20/1;
+  width: 50%;
   background-color: var(--brown);
 }
 .hand > div {
-  width: 30px;
-  height: 5px;
-  bottom: 10px;
+  width: 30%;
+  height: 100%;
+  bottom: 200%;
   background-color: var(--brown);
 }
 .hand.left {
-  bottom: 68px;
-  right: 67px;
+  bottom: 24%;
+  right: 36%;
   transform: rotate(25deg);
 }
 .hand.left > div {
-  left: 5px;
+  left: 5%;
   transform: rotate(45deg);
 }
 .hand.right {
-  bottom: 73px;
-  left: 168px;
+  bottom: 24%;
+  left: 85%;
   transform: rotate(-25deg);
 }
 .hand.right > div {
-  left: 65px;
+  left: 65%;
   transform: rotate(-45deg);
 }
 .scarf,
 .scarf3 {
-  width: 35px;
+  width: 10.294117647058822%;
   background-color: var(--red);
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 .scarf {
-  height: 50px;
-  left: 195px;
-  bottom: 90px;
+  height: 10%;
+  left: 57.35294117647059%;
+  bottom: 18%;
   transform: rotate(-15deg);
 }
 .scarf2 {
-  width: 120px;
-  height: 35px;
+  width: 35.294117647058826%;
+  height: 7%;
   background-color: var(--red);
-  bottom: 170px;
-  left: 107px;
+  bottom: 34%;
+  left: 31.470588235294116%;
   border-radius: 10px;
 }
 .scarf3 {
-  height: 80px;
-  bottom: 185px;
-  left: 182px;
+  height: 16%;
+  bottom: 37%;
+  left: 53.529411764705884%;
   transform: rotate(-10deg);
 }
