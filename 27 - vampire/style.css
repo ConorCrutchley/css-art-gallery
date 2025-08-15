@@ -11,8 +11,8 @@ body {
   align-items: center;
 }
 .vampire {
+  aspect-ratio: 12 / 13;
   width: 600px;
-  height: 650px;
   background-color: #47526d;
   position: relative;
   overflow: hidden;
@@ -23,8 +23,8 @@ body {
   position: absolute;
 }
 .head {
-  width: 450px;
-  height: 450px;
+  aspect-ratio: 1 / 1;
+  width: 75%;
   background-color: var(--skin);
   border-radius: 50%;
   top: 10%;
@@ -32,16 +32,17 @@ body {
   z-index: 3;
 }
 .hair {
-  width: 450px;
-  height: 135px;
+  aspect-ratio: 10 / 3;
+  width: 100%;
+  height: 30%;
   background-color: #333;
 }
 .hair::before,
 .hair::after {
   content: "";
   position: absolute;
-  width: 250px;
-  height: 250px;
+  aspect-ratio: 1/1;
+  width: 56%;
   background-color: var(--skin);
   border-radius: 50%;
   top: 50%;
@@ -61,7 +62,7 @@ body {
   border-radius: 50%;
 }
 .eye {
-  width: 115px;
+  width: 25.555555555555554%;
   background-color: #fff;
   top: 30%;
 }
@@ -72,20 +73,20 @@ body {
   right: 18%;
 }
 .eye::before {
-  width: 70px;
+  width: 60.86956521739131%;
   background-color: red;
   left: 30%;
   top: 20%;
 }
 .eye::after {
-  width: 58px;
+  width: 50.43478260869565%;
   background-color: #000;
   left: 38%;
   top: 20%;
 }
 .eye .brow {
-  width: 140px;
-  height: 50px;
+  aspect-ratio: 14/5;
+  width: 121.73913043478262%;
   background-color: var(--skin);
   top: -5%;
   left: -10%;
@@ -98,8 +99,8 @@ body {
   transform: rotate(-15deg);
 }
 .lower-face {
-  width: 44px;
-  height: 22px;
+  aspect-ratio: 2/1;
+  width: 9.777777777777779%;
   top: 60%;
   left: 50%;
   transform: translateX(-50%);
@@ -116,37 +117,38 @@ body {
 }
 .lower-face::after {
   background-color: var(--skin);
-  left: 2px;
 }
 .nose::before,
 .nose::after {
   aspect-ratio: 1/1;
 }
 .nose::before {
-  width: 44px;
+  width: 100%;
   bottom: 0;
+  background: linear-gradient(var(--skin) 50%, #333);
 }
 .nose::after {
-  width: 40px;
-  bottom: 2px;
+  width: 96%;
+  bottom: 10%;
+  left: 2%;
 }
 .mouth {
-  width: 225px;
+  width: 50%;
   top: 70%;
 }
 .mouth::before {
-  width: 225px;
-  height: 44px;
+  aspect-ratio: 225 / 44;
+  width: 100%;
   top: 0;
 }
 .mouth::after {
-  width: 220px;
-  height: 44px;
-  top: 2px;
+  width: 100%;
+  height: 50%;
+  top: 2%;
 }
 .tooth {
-  width: 36px;
-  height: 45px;
+  aspect-ratio: 4 / 5;
+  width: 8%;
   background-color: #fff;
   top: 71%;
   clip-path: polygon(50% 100%, 0 0, 100% 0);
@@ -174,8 +176,8 @@ body {
   border-radius: 50% 50% 0 0;
 }
 .bow {
-  height: 140px;
-  width: 100px;
+  height: 23.333333333333332%;
+  width: 16%;
   background-color: #000;
   bottom: 0;
   display: flex;
@@ -185,8 +187,8 @@ body {
 }
 div.button {
   position: relative;
-  width: 15px;
-  height: 15px;
+  aspect-ratio: 1/1;
+  width: 15%;
   background-color: red;
   border-radius: 50%;
 }
