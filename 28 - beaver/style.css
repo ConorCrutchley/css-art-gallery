@@ -10,8 +10,9 @@ body {
   --dark-brown: #3c2114;
 }
 .frame {
-  width: 350px;
-  height: 420px;
+  aspect-ratio: 5 / 6;
+  width: 100%;
+  max-width: 350px;
   background-color: var(--pink);
   border: 20px solid white;
   position: relative;
@@ -56,11 +57,11 @@ body {
 }
 .bow,
 .bow::before {
-  width: 30px;
-  height: 25px;
   background-color: var(--pink);
 }
 .bow {
+  width: 12.244897959183673%;
+  height: 6.613756613756613%;
   right: 25%;
   top: 8%;
   border-radius: 50% 15% 15% 50%;
@@ -68,22 +69,25 @@ body {
 }
 .bow::before {
   border-radius: 15% 50% 50% 15%;
-  left: -30px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
 }
 .heart,
 .heart::before,
 .heart::after {
-  width: 85px;
-  height: 85px;
+  aspect-ratio: 1/1;
   background-color: var(--pink);
 }
 .heart {
+  width: 34.69387755102041%;
   top: 70%;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
 }
 .heart::before,
 .heart::after {
+  width: 100%;
   border-radius: 50%;
 }
 .heart::before {
@@ -93,8 +97,8 @@ body {
   transform: translateX(-50%);
 }
 .eye {
-  width: 20px;
-  height: 10px;
+  aspect-ratio: 2/1;
+  width: 8.16326530612245%;
   border: 3px solid var(--dark-brown);
   border-top: 0;
   border-radius: 0 0 100px 100px;
@@ -110,15 +114,16 @@ body {
 .lashes::before,
 .lashes::after {
   width: 2px;
-  height: 8px;
   background-color: var(--dark-brown);
 }
 .lashes {
-  bottom: -8px;
+  height: 60%;
+  bottom: -60%;
   left: 48%;
 }
 .lashes::before,
 .lashes::after {
+  height: 100%;
   top: -2px;
 }
 .lashes::before {
@@ -131,33 +136,35 @@ body {
 }
 .muzzle,
 .muzzle::before {
-  width: 87px;
-  height: 55px;
   background-color: #ffd49d;
 }
 .muzzle {
+  aspect-ratio: 87 / 55;
+  width: 24.25%;
   top: 45%;
   left: 27%;
   border-radius: 50px 0 0 50px;
   transform: rotate(-10deg);
 }
 .muzzle::before {
+  width: 100%;
+  height: 100%;
   left: 100%;
   border-radius: 0 50px 50px 0;
   transform: rotate(20deg);
   transform-origin: left top;
 }
 .nose {
-  width: 56px;
-  height: 42px;
+  aspect-ratio: 4/3;
+  width: 14.358974358974358%;
   background-color: var(--dark-brown);
   left: 42%;
   top: 42%;
   border-radius: 100% 100% 40% 40%;
 }
 .teeth {
-  width: 44px;
-  height: 40px;
+  aspect-ratio: 11/10;
+  width: 11.282051282051283%;
   background-color: white;
   left: 44%;
   top: 53%;
@@ -173,12 +180,16 @@ body {
 .whiskers,
 .whiskers::before,
 .whiskers::after {
-  width: 105px;
   height: 2px;
   background-color: var(--medium-brown);
 }
 .whiskers {
+  width: 26.923076923076923%;
   top: 48%;
+}
+.whiskers::before,
+.whiskers::after {
+  width: 100%;
 }
 .whiskers:before {
   top: 15px;
@@ -211,8 +222,8 @@ body {
   transform: rotate(20deg);
 }
 .ear {
-  width: 38px;
-  height: 46px;
+  aspect-ratio: 19/23;
+  width: 9.743589743589745%;
   background-color: #f0a77e;
   border: 8px solid var(--brown);
   top: 15%;
